@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pubID" xml:lang="en" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+ 
+
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+     
+  
+
+<dc:identifier id="pubID">urn:uuid:8a5d2330-08d6-405b-a359-e6862b48ea4d</dc:identifier>
+  
+<meta refines="#pubID" property="identifier-type" scheme="xsd:string">uuid</meta>
+
+  
+
+<dc:title id="title">Example MO EPUB</dc:title>
+    
+  
+
+<dc:creator id="aut">Kent Utterback</dc:creator>
+  
+<meta refines="#aut" property="role" scheme="marc:relators">aut</meta>
+  
+<meta refines="#aut" property="file-as">Utterback, Kent</meta>
+    
+  
+
+<dc:contributor id="nrt">Kent Utterback</dc:contributor>
+  
+<meta refines="#nrt" property="role" scheme="marc:relators">nrt</meta>
+  
+<meta refines="#nrt" property="file-as">Utterback, Kent</meta>
+    
+  
+
+<dc:contributor id="bkp">eBook Publisher</dc:contributor>
+  
+<meta refines="#bkp" property="role" scheme="marc:relators">bkp</meta>
+  
+<meta refines="#bkp" property="file-as">Carrot and Stick</meta>
+
+  
+
+<dc:language>en</dc:language>
+  
+
+<dc:date>2016-08-02</dc:date>
+  
+<meta property="dcterms:modified">2014-08-02T00:00:01Z</meta>
+  
+<meta name="cover" content="#" />
+
+  
+
+<dc:publisher>ReadBeyond, Padova, Italy</dc:publisher>
+  
+
+<dc:rights>CC BY-NC-SA 4.0</dc:rights>
+  
+
+<dc:subject>William Shakespeare</dc:subject>
+  
+
+<dc:subject>Sonnets</dc:subject>
+  
+
+<dc:subject>Read aloud</dc:subject>
+  
+
+<dc:subject>EPUB 3 Media Overlays</dc:subject>
+  
+
+<dc:type>Book</dc:type>
+
+  
+<!--FIXED LAYOUT-->
+  
+<meta property="rendition:layout">pre-paginated</meta>
+  
+<meta property="rendition:orientation">portrait</meta>
+  
+  
+<!--MEDIA OVERLAYS METADATA-->
+  
+<meta property="media:duration" refines="#s001">0:00:53.320</meta>
+  
+<meta property="media:duration" refines="#s002">0:00:52.950</meta>
+  
+<meta property="media:duration" refines="#s003">0:00:51.700</meta>
+  
+<meta property="media:duration">0:02:37.970</meta>
+  
+<meta property="media:narrator">Kent Utterback</meta>
+  
+<meta property="media:active-class">mo-active</meta>
+ 
+ 
+</metadata>
+ 
+
+<manifest>
+   
+  
+<item id="toc" href="Text/toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+  
+<item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+  
+<item id="cover.png" href="Images/cover.png" media-type="image/png" properties="cover-image" />
+  
+<item id="c001" href="Styles/style.css" media-type="text/css"/>
+    
+  
+<item id="p001" href="Text/p001.xhtml" media-type="application/xhtml+xml" media-overlay="s001"/>
+  
+<item id="s001" href="Text/p001.xhtml.smil" media-type="application/smil+xml"/>
+  
+<item id="m001" href="Audio/p001.mp3" media-type="audio/mpeg"/>
+
+  
+<item id="p002" href="Text/p002.xhtml" media-type="application/xhtml+xml" media-overlay="s002"/>
+  
+<item id="s002" href="Text/p002.xhtml.smil" media-type="application/smil+xml"/>
+  
+<item id="m002" href="Audio/p002.mp3" media-type="audio/mpeg"/>
+
+  
+<item id="p003" href="Text/p003.xhtml" media-type="application/xhtml+xml" media-overlay="s003"/>
+  
+<item id="s003" href="Text/p003.xhtml.smil" media-type="application/smil+xml"/>
+  
+<item id="m003" href="Audio/p003.mp3" media-type="audio/mpeg"/>
+ 
+ 
+</manifest>
+ 
+
+<spine page-progression-direction="ltr">
+  
+<itemref idref="cover" linear="no"/>
+  
+<itemref idref="p001" linear="no"/>
+  
+<itemref idref="p002" linear="no"/>
+  
+<itemref idref="p003" linear="no"/>
+ 
+</spine>
+
+
+</package>

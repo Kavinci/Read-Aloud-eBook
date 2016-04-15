@@ -1,0 +1,49 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 30px;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+body {
+    font-family: serif;
+    font-size: 20px;
+		line-height: 1.5;
+		white-space: nowrap;
+}
+
+div#divTitle {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    height: 50px;
+}
+
+div#divLoremIpsum {
+    position: absolute;
+    text-align: center;
+    top: 124px;
+    width: 100%;
+}
+
+/*
+    EPUB 3 Media Overlays active style: pale yellow background
+*/
+.mo-active {
+    background-color: #FFFF99;
+}
+
+/*
+    Kobo ignores media:active-class and relies on a naming convention.
+    Using pale green background to make this evident.
+*/
+.kobo-smil-highlight {
+    background-color: #99FF99;
+}
